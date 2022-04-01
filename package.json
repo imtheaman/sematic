@@ -10,16 +10,26 @@
   "dependencies": {
     "@emotion/react": "^11.8.2",
     "@emotion/styled": "^11.8.1",
+    "@fortawesome/fontawesome-free": "^6.1.1",
+    "@fortawesome/fontawesome-svg-core": "^6.1.1",
+    "@fortawesome/free-regular-svg-icons": "^6.1.1",
+    "@fortawesome/free-solid-svg-icons": "^6.1.1",
+    "@fortawesome/react-fontawesome": "^0.1.18",
     "@heroicons/react": "^1.0.6",
     "@mui/icons-material": "^5.5.1",
     "@mui/material": "^5.5.2",
+    "autoprefixer": "^10.4.4",
     "email-validator": "^2.0.4",
     "firebase": "^9.6.9",
+    "font-awesome": "^4.7.0",
     "next": "12.1.0",
+    "postcss": "^8.4.12",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-firebase-hooks": "^5.0.3",
-    "styled-components": "^5.3.3"
+    "styled-components": "^5.3.5",
+    "tailwindcss": "^3.0.23",
+    "typescript": "^4.6.3"
   },
   "devDependencies": {
     "eslint": "8.11.0",

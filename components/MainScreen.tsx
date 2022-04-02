@@ -33,9 +33,7 @@ const MainScreen: NextPage = () => {
           <div className="flex justify-between items-start w-full">
             <h2 className="heading mb-5">Progress insights</h2>
             <select className="text-gray-400 bg-transparent cursor-pointer outline-none">
-              <option selected value="Weekly">
-                Weekly
-              </option>
+              <option value="Weekly">Weekly</option>
               <option value="Daily">Daily</option>
               <option value="Monthly">Monthly</option>
               <option value="Yearly">Yearly</option>

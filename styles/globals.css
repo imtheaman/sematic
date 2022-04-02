@@ -35,6 +35,9 @@
 }
 
 @layer components {
+  .main-screen {
+    @apply bg-gray-100 rounded-l-3xl overflow-auto h-[100vh] w-full px-12 py-8;
+  }
   .heading {
     @apply capitalize font-semibold text-lg text-blueish;
   }

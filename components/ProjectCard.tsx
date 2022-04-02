@@ -11,16 +11,14 @@ const ProjectCard: NextPage<ProjectProps> = ({ title, percent, className }) => {
         {percent >= 100 ? (
           <FontAwesomeIcon
             icon={faCircleCheck}
-            color="#ff4a86"
             fontSize={25}
-            className="mt-2"
+            className="mt-2 text-pinkish"
           />
         ) : (
           <FontAwesomeIcon
             icon={faCircle}
             fontSize={25}
-            color="#784af5"
-            className="mt-2"
+            className="mt-2 text-violetish"
           />
         )}
       </div>

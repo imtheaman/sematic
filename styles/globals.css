@@ -21,7 +21,7 @@
   }
 
   ::-webkit-scrollbar {
-    width: 8px;
+    width: 2px;
     background-color: transparent;
   }
 
@@ -46,5 +46,8 @@
   }
   .profile-heading {
     @apply text-gray-500 font-semibold text-lg my-4;
+  }
+  .link-hover {
+    @apply hover:font-semibold transition duration-75;
   }
 }

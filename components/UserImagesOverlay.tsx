@@ -3,8 +3,8 @@ import Image from "next/image";
 
 interface Props {
   imgArray: string[];
-  alt?: string;
-  size: number;
+  alt: string;
+  size: string;
 }
 
 const UserImagesOverlay: NextPage<Props> = ({ imgArray, alt, size }) => {
@@ -12,21 +12,22 @@ const UserImagesOverlay: NextPage<Props> = ({ imgArray, alt, size }) => {
     <div className="-space-x-4 flex items-center">
       {imgArray.map((img, index) => {
         return (
-          <span
+          <div
             key={index}
-            className={`relative rounded-full w-${size} h-${size} z-${
+            className={`relative rounded-full w-[${size}] h-[${size}] z-${
               40 - 10 * index
             } border-2 border-[#fff]`}
           >
             <Image
               className="rounded-full"
               src={img}
+              width={size}
+              height={size}
               alt={alt}
-              layout="fill"
               objectFit="cover"
               objectPosition="top"
             />
-          </span>
+          </div>
         );
       })}
     </div>

@@ -5,9 +5,7 @@ interface Props {
 }
 const OverviewCard: NextPage<Props> = ({ className, children }) => {
   return (
-    <div
-      className={`shadow-md rounded-xl cursor-pointer bg-white ${className}`}
-    >
+    <div className={`shadow-md rounded-xl py-4 px-6 bg-white ${className}`}>
       {children}
     </div>
   );

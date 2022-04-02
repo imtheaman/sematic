@@ -1,11 +1,16 @@
 import { NextPage } from "next";
-import { Fragment } from "react";
+import { Fragment, useEffect, useRef } from "react";
 import Message from "./Message";
 import MessageInput from "./MessageInput";
 import ProfileHeading from "./ProfileHeading";
 import UserImagesOverlay from "./UserImagesOverlay";
 
 const TeamChatSmall: NextPage = () => {
+  const chatRef: { current: HTMLDivElement } = useRef();
+  useEffect(() => {
+    chatRef.current.scrollTop = chatRef.current.scrollHeight;
+  });
+
   return (
     <Fragment>
       <ProfileHeading heading="Team Chat">
@@ -16,11 +21,14 @@ const TeamChatSmall: NextPage = () => {
             "/images/user2.jpg",
           ]}
           alt="Team members"
-          size={8}
+          size="30px"
         />
       </ProfileHeading>
-      <div className=" w-full h-52 rounded-lg bg-violet-100 relative overflow-hidden">
-        <div className="grid grid-cols-1 gap-3 px-3 py-4 justify-center h-40 text-lg font-semibold text-gray-400 overflow-auto">
+      <div className=" w-full h-52 rounded-lg bg-violet-100 relative overflow-hidden scroll-m-1">
+        <div
+          ref={chatRef}
+          className="grid grid-cols-1 gap-3 px-3 py-4 justify-center h-40 text-lg font-semibold text-gray-400 overflow-auto"
+        >
           {/* <p>Start a chat</p> */}
           <Message
             content="Guys, could you send me the latest build pls?"
@@ -44,7 +52,7 @@ const TeamChatSmall: NextPage = () => {
             content="Here's the latest build for you."
             sentBy="me"
             senderImage="/images/user2.jpg"
-            time="11:39 PM"
+            time="11:45 PM"
           />
         </div>
         <MessageInput />

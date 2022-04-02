@@ -22,6 +22,7 @@
     "email-validator": "^2.0.4",
     "firebase": "^9.6.9",
     "font-awesome": "^4.7.0",
+    "fusioncharts": "^3.18.0",
     "next": "12.1.0",
     "postcss": "^8.4.12",
     "react": "17.0.2",

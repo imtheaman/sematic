@@ -21,7 +21,9 @@ const TeamChatSmall: NextPage = () => {
             "/images/user2.jpg",
           ]}
           alt="Team members"
-          size="30px"
+          size="32px"
+          width="w-7"
+          height="h-7"
         />
       </ProfileHeading>
       <div className=" w-full h-52 rounded-lg bg-violet-100 relative overflow-hidden scroll-m-1">

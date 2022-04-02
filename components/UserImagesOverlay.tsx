@@ -5,29 +5,36 @@ interface Props {
   imgArray: string[];
   alt: string;
   size: string;
+  width: string;
+  height: string;
 }
 
-const UserImagesOverlay: NextPage<Props> = ({ imgArray, alt, size }) => {
+const UserImagesOverlay: NextPage<Props> = ({
+  imgArray,
+  alt,
+  size,
+  width,
+  height,
+}) => {
   return (
     <div className="-space-x-4 flex items-center">
       {imgArray.map((img, index) => {
         return (
-          <div
+          <span
             key={index}
-            className={`relative rounded-full w-[${size}] h-[${size}] z-${
+            className={`relative rounded-full ${width} ${height} z-${
               40 - 10 * index
             } border-2 border-[#fff]`}
           >
             <Image
               className="rounded-full"
               src={img}
-              width={size}
-              height={size}
+              layout="fill"
               alt={alt}
               objectFit="cover"
               objectPosition="top"
             />
-          </div>
+          </span>
         );
       })}
     </div>

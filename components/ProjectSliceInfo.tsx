@@ -13,8 +13,10 @@ const ProjectSlicInfo: NextPage<ProjectProps> = ({ title, percent }) => {
           "/images/user2.jpg",
           "/images/user.jpg",
         ]}
+        width="w-9"
+        height="h-9"
         alt="people working on this project"
-        size='40px'
+        size="40px"
       />
       <div className="flex justify-between flex-grow">
         <h3 className="ml-4 mb-2 text-gray-500">{title}</h3>

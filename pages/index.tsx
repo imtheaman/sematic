@@ -18,7 +18,7 @@ const Home: NextPage = () => {
         <title>Sematic: Track your progress in the most efficient way.</title>
       </Head>
       {/* Maintenace mode */}
-      <div className="p-3 bg-yellow-500 rounded-lg animate-ping text-[#fff] mt-2 inline absolute top-0 right-[3rem] rotate-45">
+      <div className="p-3 bg-yellow-500 rounded-lg animate-bounce text-[#fff] mt-2 inline absolute top-0 right-[3rem]">
         In Live Maintenance
       </div>
 

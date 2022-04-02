@@ -4,20 +4,11 @@ import { NextPage } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { Fragment } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { RootState } from "../../store";
-import { incrementByAmt } from "../../store/ui-reducers";
 import ProfileCardsContainer from "./ProfileCardsContainer";
 import ProfileHeading from "./ProfileHeading";
 import TeamChatSmall from "./TeamChatSmall";
 
 const SideBar: NextPage = () => {
-  const value = useSelector<RootState>((rootState): number => {
-    return rootState.ui.value;
-  });
-
-  console.log(value);
-  const dispatch = useDispatch();
   return (
     <div className="w-[24rem] h-[100vh] px-5 py-8">
       {/* Profile header */}
@@ -26,7 +17,6 @@ const SideBar: NextPage = () => {
         <button
           className="relative mt-2 text-violetish"
           title="Themes"
-          onClick={() => dispatch(incrementByAmt(12))}
         >
           <Fragment>
             <FontAwesomeIcon

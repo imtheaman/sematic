@@ -6,8 +6,8 @@
 > both will be fully functional alongwith data processing and backend.
 
 in this project -
-React ✅
-Redux ✅
-connect with graphql ✅
-responsive ✅
-mobile first ✅
+* React ✅
+* Redux ✅
+* connect with graphql ✅
+* responsive ✅
+* mobile first ✅

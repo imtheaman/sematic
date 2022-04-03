@@ -54,4 +54,10 @@
   .link-hover {
     @apply hover:font-semibold transition duration-75;
   }
+  .btn-selected {
+    @apply px-10 py-1 bg-blueish text-[#fff] rounded-md;
+  }
+  .btn {
+    @apply px-10 py-1 border hover:border-blueish border-transparent rounded-md transition duration-75 ease-out;
+  }
 }

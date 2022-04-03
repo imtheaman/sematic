@@ -1,85 +1,10 @@
 import { NextPage } from "next";
 import Image from "next/image";
 import { Fragment } from "react";
-import OneMonthContributions from "./OneMonthContributions";
-import OneWeekContributions from "./OneWeekContributions";
+import Contributions from "./Contributions";
 
 // bg-[#fff] shadow-md p-2 rounded-xl
 const UserHeader: NextPage = () => {
-  const data = {
-    April: [
-      [6, 6, 8, 10, 0, 6, 0],
-      [6, 0, 6, 2, 10, 0, 8],
-      [4, 2, 4, 0, 0, 0, 10],
-      [8, 6, 4, 2, 10, 0, 10],
-    ],
-    May: [
-      [10, 10, 8, 4, 2, 10, 2],
-      [0, 4, 2, 10, 0, 2, 10],
-      [8, 0, 2, 10, 2, 4, 10],
-      [4, 8, 0, 10, 10, 6, 6],
-    ],
-    June: [
-      [4, 10, 0, 0, 2, 8, 10],
-      [4, 2, 8, 10, 6, 2, 2],
-      [0, 4, 0, 4, 8, 8, 4],
-      [0, 0, 0, 6, 2, 0, 6],
-    ],
-    July: [
-      [10, 10, 0, 2, 8, 4, 10],
-      [2, 8, 4, 8, 8, 6, 4],
-      [2, 2, 0, 6, 8, 10, 8],
-      [10, 10, 6, 4, 10, 2, 2],
-    ],
-    Aug: [
-      [2, 4, 0, 4, 0, 8, 6],
-      [10, 0, 0, 10, 10, 8, 2],
-      [2, 10, 4, 10, 10, 10, 10],
-      [2, 2, 0, 6, 2, 8, 6],
-    ],
-    Sep: [
-      [6, 8, 8, 4, 10, 6, 4],
-      [2, 4, 6, 8, 10, 10, 2],
-      [10, 0, 2, 2, 6, 8, 6],
-      [2, 4, 2, 4, 4, 6, 8],
-    ],
-    Oct: [
-      [2, 10, 2, 2, 6, 4, 10],
-      [10, 6, 8, 4, 10, 6, 10],
-      [0, 10, 4, 6, 6, 2, 10],
-      [8, 6, 2, 8, 0, 8, 10],
-    ],
-    Nov: [
-      [2, 0, 0, 2, 6, 0, 2],
-      [6, 2, 2, 0, 4, 4, 6],
-      [2, 6, 10, 10, 4, 2, 0],
-      [0, 9, 0, 6, 14, 12, 12],
-    ],
-    Dec: [
-      [5, 3, 9, 0, 7, 2, 4],
-      [3, 3, 0, 2, 9, 7, 9],
-      [4, 1, 3, 6, 8, 3, 5],
-      [3, 2, 2, 6, 3, 5, 2],
-    ],
-    Jan: [
-      [7, 9, 0, 7, 9, 1, 8],
-      [1, 6, 7, 1, 8, 0, 4],
-      [2, 6, 6, 1, 4, 7, 1],
-      [3, 9, 0, 7, 1, 9, 0],
-    ],
-    Feb: [
-      [3, 0, 2, 6, 2, 7, 7],
-      [0, 5, 7, 5, 3, 2, 9],
-      [5, 6, 2, 7, 5, 4, 1],
-      [0, 8, 1, 0, 3, 7, 9],
-    ],
-    Mar: [
-      [12, 7, 13, 9, 12, 7, 6],
-      [8, 0, 14, 11, 5, 9, 5],
-      [6, 2, 9, 4, 6, 12, 14],
-      [12, 6, 8, 10, 2, 0, 0],
-    ],
-  };
   return (
     <Fragment>
       <div className="w-full relative overflow-hidden h-48 bg-[#fff] rounded-lg">
@@ -105,7 +30,7 @@ const UserHeader: NextPage = () => {
           <div className="my-1 ml-6 flex flex-col">
             <h1 className="heading text-3xl">Sarah Williams</h1>
             <h3 className="text-lg text-gray-600">Hiring manager at Apple</h3>
-            <span className="text-gray-500 flex-grow">2017 - Current</span>
+            <span className="text-gray-600 flex-grow">2017 - Current</span>
             <p>Loves to talk about #productivity</p>
           </div>
         </div>
@@ -116,7 +41,7 @@ const UserHeader: NextPage = () => {
                 Most recent project
               </span>
             </h3>
-            <p className="text-gray-900 text-lg ">
+            <p className="text-gray-800 text-lg ">
               Sematic: iOS app development
             </p>
           </div>
@@ -144,34 +69,7 @@ const UserHeader: NextPage = () => {
           </div>
         </div>
       </div>
-      <div className="flex space-x-3 bg-white h-48 w-full p-4 justify-items-center shadow-sm overflow-scroll rounded-lg mt-8">
-        <ul className="text-xs text-gray-700 h-full py-7">
-          <li>Sun</li>
-          <li>
-            <br />
-          </li>
-          <li>Tue</li>
-          <li>
-            <br />
-          </li>
-          <li>Thu</li>
-          <li>
-            <br />
-          </li>
-          <li>Sat</li>
-        </ul>
-        <div className="flex flex-row space-x-2">
-          {Object.keys(data).map((month) => {
-            return (
-              <OneMonthContributions
-                month={month}
-                data={data[month]}
-                key={month}
-              />
-            );
-          })}
-        </div>
-      </div>
+      <Contributions />
     </Fragment>
   );
 };

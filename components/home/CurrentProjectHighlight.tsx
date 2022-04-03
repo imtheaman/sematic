@@ -25,7 +25,11 @@ const CurrentProjectHighlight: NextPage = () => {
             </ul>
           }
         >
-          <FontAwesomeIcon icon={faEllipsisV} color="#16365f" fontSize={20} />
+          <FontAwesomeIcon
+            icon={faEllipsisV}
+            className="text-blueish"
+            fontSize={20}
+          />
         </ModalOptions>
       </div>
       <ProjectSlice title="iOS development" percent={72} />

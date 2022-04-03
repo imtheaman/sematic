@@ -21,8 +21,10 @@ const AppWrapper: NextPage<Props> = ({
         <title>{title}</title>
       </Head>
       {/* Maintenace mode */}
-      <div className="p-3 bg-yellow-500 rounded-lg animate-bounce text-[#fff] mt-2 inline absolute top-0 right-[3rem]">
-        In Live Maintenance
+      <div className="p-3 bg-violet-500 w-full text-[#fff] mt-1 left-0 absolute top-0">
+        <marquee>
+          This site is in live creation, please check this site 24hrs. later!
+        </marquee>
       </div>
 
       <main className="bg-white flex relative shadow-xl rounded-2xl min-h-[100vh] overflow-hidden">

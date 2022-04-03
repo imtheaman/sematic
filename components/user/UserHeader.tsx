@@ -29,7 +29,9 @@ const UserHeader: NextPage = () => {
           <div className="my-1 ml-6 flex flex-col">
             <h1 className="heading text-3xl">Sarah Williams</h1>
             <h3 className="text-lg text-gray-600">Hiring manager at Apple</h3>
-            <span className="text-gray-600 flex-grow">2017 - Current</span>
+            <span className="text-gray-600 flex-grow font-thin">
+              2017 - Current
+            </span>
             <p>Loves to talk about #productivity</p>
           </div>
         </div>
@@ -53,7 +55,7 @@ const UserHeader: NextPage = () => {
               <h3 className="text-lg font-semibold text-gray-600">
                 connections
               </h3>
-              <span className="text-xl font-bold text-blueish">128</span>
+              <span className="text-xl font-bold text-blueish">1.28K</span>
             </div>
             <div className="flex flex-col-reverse items-center ">
               <h3 className="text-lg font-semibold text-gray-600">projects</h3>

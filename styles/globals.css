@@ -51,6 +51,9 @@
   .profile-heading {
     @apply text-gray-500 font-semibold text-lg my-4;
   }
+  .link {
+    @apply text-violetish cursor-pointer;
+  }
   .link-hover {
     @apply hover:font-semibold transition duration-75;
   }

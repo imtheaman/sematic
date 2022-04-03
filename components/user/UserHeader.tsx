@@ -1,9 +1,7 @@
 import { NextPage } from "next";
 import Image from "next/image";
 import { Fragment } from "react";
-import Contributions from "./Contributions";
 
-// bg-[#fff] shadow-md p-2 rounded-xl
 const UserHeader: NextPage = () => {
   return (
     <Fragment>
@@ -16,7 +14,8 @@ const UserHeader: NextPage = () => {
           alt="Captured by Drew Beamer"
         />
       </div>
-      <div className="flex mt-8 justify-between px-3">
+      {/* Profile */}
+      <div className="flex justify-between px-4">
         <div className="flex h-32">
           <div className="relative w-32 h-full shadow-md overflow-hidden rounded-lg">
             <Image
@@ -69,7 +68,6 @@ const UserHeader: NextPage = () => {
           </div>
         </div>
       </div>
-      <Contributions />
     </Fragment>
   );
 };

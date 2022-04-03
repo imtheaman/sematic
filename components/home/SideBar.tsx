@@ -10,14 +10,11 @@ import TeamChatSmall from "./TeamChatSmall";
 
 const SideBar: NextPage = () => {
   return (
-    <div className="w-[24rem] h-[100vh] px-5 py-8">
+    <div className="w-[28rem] h-[100vh] px-5 py-8">
       {/* Profile header */}
       <div className="flex justify-between ">
         <h3 className="heading flex-grow">My Profile</h3>
-        <button
-          className="relative mt-2 text-violetish"
-          title="Themes"
-        >
+        <button className="relative mt-2 text-violetish" title="Themes">
           <Fragment>
             <FontAwesomeIcon
               icon={faSquare}

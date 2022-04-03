@@ -2,9 +2,9 @@ import { NextPage } from "next";
 import Head from "next/head";
 import Logo from "../components/home/Logo";
 import NavBar from "../components/home/NavBar";
-import MainScreen from "../components/user/MainScreen";
+import MainScreen from "../components/profile/MainScreen";
 
-const user: NextPage = () => {
+const Profile: NextPage = () => {
   return (
     <div>
       <Head>
@@ -23,4 +23,4 @@ const user: NextPage = () => {
   );
 };
 
-export default user;
+export default Profile;

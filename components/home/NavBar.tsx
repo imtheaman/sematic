@@ -26,12 +26,12 @@ const NavBar: NextPage = () => {
             }`}
           />
         </Link>
-        <Link href="/user" passHref>
+        <Link href="/profile" passHref>
           <FontAwesomeIcon
             icon={faUser}
             fontSize="20"
             className={`cursor-pointer ${
-              router.route === "/user" && "text-violetish"
+              router.route === "/profile" && "text-violetish"
             }`}
           />
         </Link>

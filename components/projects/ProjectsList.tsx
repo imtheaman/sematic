@@ -6,9 +6,9 @@ const ProjectsList: NextPage = () => {
   const data = {};
   return (
     <div className="px-4">
-      <h3 className="text-2xl font-semibold text-blueish mb-12">
+      <h1 className="text-2xl font-semibold text-blueish mb-12">
         All Projects
-      </h3>
+      </h1>
       <ul className="border-t">
         <ProjectLink name="iOS app development" completed={17} total={20} />
         <ProjectLink name="Ui/Ux design" completed={20} total={20} />

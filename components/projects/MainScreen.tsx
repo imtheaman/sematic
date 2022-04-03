@@ -1,13 +1,14 @@
 import { NextPage } from "next";
 import ProjectsList from "./ProjectsList";
 import CurrentProjectInsights from "./CurrentProjectInsights";
+import { Fragment } from "react";
 
 const MainScreen: NextPage = () => {
   return (
-    <div className="main-screen space-y-12">
+    <Fragment>
       <CurrentProjectInsights />
       <ProjectsList />
-    </div>
+    </Fragment>
   );
 };
 

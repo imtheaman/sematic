@@ -12,7 +12,7 @@ const ModalOptions: NextPage<Props> = ({ options, className, children }) => {
     <div className={`relative ${className}`}>
       <button onClick={() => setShowModal((s) => !s)}>{children}</button>
       {showModal && options ? (
-        <div className="absolute z-50 mr-4 text-violet-900 top-0 right-4">
+        <div className="absolute z-50 mr-4 top-0 right-4">
           {options}
         </div>
       ) : null}

@@ -15,7 +15,10 @@ const UserHeader: NextPage = () => {
         />
       </div>
       {/* Profile */}
-      <div className="flex justify-between px-4">
+      <div
+        style={{ marginBottom: "4rem" }}
+        className="flex justify-between px-4 pb-3 border-b"
+      >
         <div className="flex h-32">
           <div className="relative w-32 h-full shadow-md overflow-hidden rounded-lg">
             <Image
@@ -27,7 +30,9 @@ const UserHeader: NextPage = () => {
             />
           </div>
           <div className="my-1 ml-6 flex flex-col">
-            <h1 className="heading text-3xl">Sarah Williams</h1>
+            <h1 className="font-semibold text-violet-900 text-3xl">
+              Sarah Williams
+            </h1>
             <h3 className="text-lg text-gray-600">Hiring manager at Apple</h3>
             <span className="text-gray-600 flex-grow font-thin">
               2017 - Current
@@ -37,7 +42,7 @@ const UserHeader: NextPage = () => {
         </div>
         <div className="flex flex-col justify-around">
           <div className="flex space-x-2 items-center">
-            <h3 className="text-lg text-[#fff] bg-blueish font-thin py-1 px-4 -skew-x-12">
+            <h3 className="text-lg text-[#fff] bg-violet-900 font-thin py-1 px-4 -skew-x-12">
               <span className="inline-block skew-x-12">
                 Most recent project
               </span>
@@ -49,23 +54,23 @@ const UserHeader: NextPage = () => {
           <div className="flex space-x-8">
             <div className="flex flex-col-reverse items-center ">
               <h3 className="text-lg font-semibold text-gray-600">teammates</h3>
-              <span className="text-xl font-bold text-blueish">32</span>
+              <span className="text-xl font-bold text-violet-900">32</span>
             </div>
             <div className="flex flex-col-reverse items-center ">
               <h3 className="text-lg font-semibold text-gray-600">
                 connections
               </h3>
-              <span className="text-xl font-bold text-blueish">1.28K</span>
+              <span className="text-xl font-bold text-violet-900">1.28K</span>
             </div>
             <div className="flex flex-col-reverse items-center ">
               <h3 className="text-lg font-semibold text-gray-600">projects</h3>
-              <span className="text-xl font-bold text-blueish">43</span>
+              <span className="text-xl font-bold text-violet-900">43</span>
             </div>
             <div className="flex flex-col-reverse items-center ">
               <h3 className="text-lg font-semibold text-gray-600">
                 contributions
               </h3>
-              <span className="text-xl font-bold text-blueish">4988</span>
+              <span className="text-xl font-bold text-violet-900">4988</span>
             </div>
           </div>
         </div>

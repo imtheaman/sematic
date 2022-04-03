@@ -1,11 +1,12 @@
 import { NextPage } from "next";
 import Image from "next/image";
+import { Fragment } from "react";
 import CurrentProjectHighlight from "./CurrentProjectHighlight";
 import OverviewCard from "./OverviewCard";
 
 const MainScreen: NextPage = () => {
   return (
-    <div className="main-screen">
+    <div>
       {/* Header Overview Part */}
       <div className="grid grid-cols-3 mb-6 gap-8 p-2">
         <div className="col-span-2">
@@ -15,7 +16,7 @@ const MainScreen: NextPage = () => {
               <h1 className="text-3xl heading flex-grow normal-case">
                 Are deadlines a real key success indicator?
               </h1>
-              <button className="bg-blueish text-[#fff] px-10 py-2 rounded-lg">
+              <button className="bg-violetish text-[#fff] px-10 py-2 rounded-lg">
                 Read
               </button>
             </div>

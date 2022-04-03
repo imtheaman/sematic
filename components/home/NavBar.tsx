@@ -57,13 +57,13 @@ const NavBar: NextPage = () => {
             }`}
           />
         </Link>
-        <Link href="/setting" passHref>
+        <Link href="/settings" passHref>
           <FontAwesomeIcon
-            title="Setting"
+            title="Settings"
             icon={faGear}
             fontSize="20"
             className={`cursor-pointer ${
-              router.route === "/setting" && "text-violetish"
+              router.route === "/settings" && "text-violetish"
             }`}
           />
         </Link>

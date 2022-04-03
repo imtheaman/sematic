@@ -7,12 +7,14 @@ interface Props {
 }
 const OneMonthContributions: NextPage<Props> = ({ month, data }) => {
   return (
-    <>
-      <p>{month}</p>
-      {data.map((week, index) => {
-        return <OneWeekContributions key={index} weekContributions={week} />;
-      })}
-    </>
+    <div>
+      <p className="mb-2">{month}</p>
+      <div className="flex space-x-2">
+        {data.map((week, index) => {
+          return <OneWeekContributions key={index} weekContributions={week} />;
+        })}
+      </div>
+    </div>
   );
 };
 

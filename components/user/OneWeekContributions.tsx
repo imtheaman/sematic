@@ -5,13 +5,13 @@ interface Props {
 }
 const OneWeekContributions: NextPage<Props> = ({ weekContributions }) => {
   return (
-    <div className="flex flex-col space-y-2">
+    <div className="flex flex-col space-y-1">
       {weekContributions.map((cont, index) => {
         return (
           <div
             key={index}
             title={cont + " contributions"}
-            className={`w-4 h-4 rounded ${
+            className={`w-3 h-3 rounded-sm ${
               cont >= 10
                 ? "bg-green-700"
                 : cont >= 7

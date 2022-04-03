@@ -22,8 +22,10 @@ const AppWrapper: NextPage<Props> = ({
       </Head>
       {/* Maintenace mode */}
       <div className="p-3 bg-violet-500 w-full text-[#fff] mt-1 left-0 absolute top-0">
+        {/* @ts-ignore */}
         <marquee>
           This site is in live creation, please check this site 24hrs. later!
+          {/* @ts-ignore */}
         </marquee>
       </div>
 

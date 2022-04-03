@@ -5,7 +5,7 @@ import { Fragment } from "react";
 const UserHeader: NextPage = () => {
   return (
     <Fragment>
-      <div className="w-full relative overflow-hidden h-48 bg-[#fff] rounded-lg">
+      <div className="w-full relative overflow-hidden shadow-sm h-48 bg-[#fff] rounded-lg">
         <Image
           src="https://images.unsplash.com/photo-1503437313881-503a91226402?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80"
           layout="fill"

@@ -5,7 +5,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { NextPage } from "next";
 import { Fragment } from "react";
-import CustomLink from "../customs/CustomLink";
+import CustomSiteLink from "../customs/CustomSiteLink";
 
 const RecentActivity: NextPage = () => {
   return (
@@ -18,8 +18,8 @@ const RecentActivity: NextPage = () => {
             className="text-[#fff] bg-violetish w-5 h-5 p-2 rounded mr-2"
           />
           <p>
-            Merged a pull request in branch <CustomLink>main</CustomLink> of{" "}
-            <CustomLink>iOS app development</CustomLink>
+            Merged a pull request in branch <CustomSiteLink>main</CustomSiteLink> of{" "}
+            <CustomSiteLink>iOS app development</CustomSiteLink>
           </p>
         </div>
         <div className="flex items-center">
@@ -28,8 +28,8 @@ const RecentActivity: NextPage = () => {
             className="text-[#fff] bg-green-400 w-5 h-5 p-2 rounded mr-2"
           />
           <p>
-            Created a pull request in branch <CustomLink>main</CustomLink> of{" "}
-            <CustomLink>iOS app development</CustomLink>
+            Created a pull request in branch <CustomSiteLink>main</CustomSiteLink> of{" "}
+            <CustomSiteLink>iOS app development</CustomSiteLink>
           </p>
         </div>
       </div>

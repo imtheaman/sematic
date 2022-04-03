@@ -5,10 +5,10 @@ interface Props {
 }
 const OneWeekContributions: NextPage<Props> = ({ weekContributions }) => {
   return (
-    <div className="flex flex-col space-y-1">
+    <ul className="flex flex-col space-y-1">
       {weekContributions.map((cont, index) => {
         return (
-          <div
+          <li
             key={index}
             title={cont + " contributions"}
             className={`w-3 h-3 rounded-sm ${
@@ -22,10 +22,10 @@ const OneWeekContributions: NextPage<Props> = ({ weekContributions }) => {
                 ? "bg-green-200"
                 : "bg-gray-300"
             }`}
-          ></div>
+          ></li>
         );
       })}
-    </div>
+    </ul>
   );
 };
 

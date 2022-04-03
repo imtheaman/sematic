@@ -19,6 +19,7 @@ const NavBar: NextPage = () => {
       <div className="flex flex-col space-y-12 ">
         <Link href="/" passHref>
           <FontAwesomeIcon
+            title="Home"
             icon={faHome}
             fontSize="20"
             className={`cursor-pointer ${
@@ -28,6 +29,7 @@ const NavBar: NextPage = () => {
         </Link>
         <Link href="/profile" passHref>
           <FontAwesomeIcon
+            title="Profile"
             icon={faUser}
             fontSize="20"
             className={`cursor-pointer ${
@@ -37,6 +39,7 @@ const NavBar: NextPage = () => {
         </Link>
         <Link href="/projects" passHref>
           <FontAwesomeIcon
+            title="Projects"
             icon={faBook}
             fontSize="20"
             className={`cursor-pointer ${
@@ -46,6 +49,7 @@ const NavBar: NextPage = () => {
         </Link>
         <Link href="/insights" passHref>
           <FontAwesomeIcon
+            title="Insights"
             icon={faChartPie}
             fontSize="20"
             className={`cursor-pointer ${
@@ -55,6 +59,7 @@ const NavBar: NextPage = () => {
         </Link>
         <Link href="/setting" passHref>
           <FontAwesomeIcon
+            title="Setting"
             icon={faGear}
             fontSize="20"
             className={`cursor-pointer ${
@@ -65,6 +70,7 @@ const NavBar: NextPage = () => {
       </div>
       <Link href="#" passHref>
         <FontAwesomeIcon
+          title="Sign out"
           icon={faRightFromBracket}
           className="mt-12 cursor-pointer"
           fontSize="20"

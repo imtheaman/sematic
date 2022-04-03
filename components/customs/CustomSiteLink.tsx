@@ -1,7 +1,7 @@
 import { NextPage } from "next";
 import Link from "next/link";
 
-const CustomLink: NextPage = ({ children }) => {
+const CustomSiteLink: NextPage = ({ children }) => {
   return (
     <Link href="#" passHref>
       <span className="link-hover link">{children}</span>
@@ -9,4 +9,4 @@ const CustomLink: NextPage = ({ children }) => {
   );
 };
 
-export default CustomLink;
+export default CustomSiteLink;

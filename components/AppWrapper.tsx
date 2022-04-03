@@ -20,7 +20,6 @@ const AppWrapper: NextPage<Props> = ({
       <Head>
         <title>{title}</title>
       </Head>
-      {/* Maintenace mode */}
       <div className="p-3 bg-violet-500 w-full text-[#fff] mt-1 left-0 absolute top-0">
         {/* @ts-ignore */}
         <marquee>
@@ -28,11 +27,10 @@ const AppWrapper: NextPage<Props> = ({
           {/* @ts-ignore */}
         </marquee>
       </div>
-
       <main className="bg-white flex relative shadow-xl rounded-2xl min-h-[100vh] overflow-hidden">
         <Logo />
         <NavBar />
-        <div className={`main-screen ${className}`}>{children}</div>
+        <div className={`main-screen relative ${className}`}>{children}</div>
         {anotherScreen}
       </main>
     </div>

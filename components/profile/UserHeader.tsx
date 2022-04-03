@@ -1,5 +1,6 @@
 import { NextPage } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import { Fragment } from "react";
 
 const UserHeader: NextPage = () => {
@@ -42,14 +43,16 @@ const UserHeader: NextPage = () => {
         </div>
         <div className="flex flex-col justify-around">
           <div className="flex space-x-2 items-center">
-            <h3 className="text-lg text-[#fff] bg-violet-900 font-thin py-1 px-4 -skew-x-12">
+            <h3 className="text-lg text-[#fff] bg-violet-800 font-thin py-1 px-4 -skew-x-12">
               <span className="inline-block skew-x-12">
                 Most recent project
               </span>
             </h3>
-            <p className="text-gray-800 text-lg ">
-              Sematic: iOS app development
-            </p>
+            <Link href="#" passHref>
+              <p className="text-gray-800 text-lg cursor-pointer">
+                Sematic: iOS app development
+              </p>
+            </Link>
           </div>
           <div className="flex space-x-8">
             <div className="flex flex-col-reverse items-center ">
@@ -68,9 +71,9 @@ const UserHeader: NextPage = () => {
             </div>
             <div className="flex flex-col-reverse items-center ">
               <h3 className="text-lg font-semibold text-gray-600">
-                contributions
+                contributions(1yr.)
               </h3>
-              <span className="text-xl font-bold text-violet-900">4988</span>
+              <span className="text-xl font-bold text-violet-900">4.98K</span>
             </div>
           </div>
         </div>

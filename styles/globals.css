@@ -58,9 +58,9 @@
     @apply hover:font-semibold transition duration-75;
   }
   .btn-selected {
-    @apply px-10 py-1 bg-violet-900 text-[#fff] rounded-md;
+    @apply px-10 py-1 bg-violet-800 text-[#fff] rounded-md;
   }
   .btn {
-    @apply px-10 py-1 border hover:border-violet-900 border-transparent rounded-md transition duration-75 ease-out;
+    @apply px-10 py-1 border hover:border-violet-800 border-transparent rounded-md transition duration-75 ease-out;
   }
 }

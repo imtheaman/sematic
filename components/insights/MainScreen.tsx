@@ -1,5 +1,6 @@
 import { NextPage } from "next";
 import dynamic from "next/dynamic";
+import { Fragment } from "react";
 
 const MapView = dynamic(() => import("../insights/InsightBar"), {
   ssr: false,
@@ -7,9 +8,14 @@ const MapView = dynamic(() => import("../insights/InsightBar"), {
 
 const MainScreen: NextPage = () => {
   return (
-    <div className="w-full grid grid-cols-2 gap-4 h-60">
-      <MapView />
-    </div>
+    <Fragment>
+      <div className="w-full grid grid-cols-2 gap-4 h-60">
+        <MapView />
+      </div>
+      <div className="bg-red-500 w-full h-24 absolute top-40 left-0 flex items-center text-4xl text-[#fff] justify-center">
+        ⚠ This page will take more time ⚠
+      </div>
+    </Fragment>
   );
 };
 

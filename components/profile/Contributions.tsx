@@ -5,8 +5,8 @@ import OneMonthContributions from "./OneMonthContributions";
 const Contributions: NextPage = () => {
   const data = {
     April: [
-      [6, 6, 8, 10, 0, 6, 0],
-      [6, 0, 6, 2, 10, 0, 8],
+      [0, 0, 0, 0, 0, 6, 0],
+      [0, 0, 0, 0, 0, 0, 8],
       [4, 2, 4, 0, 0, 0, 10],
       [8, 6, 4, 2, 10, 0, 10],
     ],

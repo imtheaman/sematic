@@ -26,7 +26,7 @@ const TeamChatSmall: NextPage = () => {
           height="h-7"
         />
       </ProfileHeading>
-      <div className=" w-full h-52 rounded-lg bg-violet-100 relative overflow-hidden scroll-m-1">
+      <div className=" w-full h-52 rounded-lg bg-violet-100 shadow relative overflow-hidden scroll-m-1">
         <div
           ref={chatRef}
           className="grid grid-cols-1 gap-3 px-3 py-4 justify-center h-40 text-lg font-semibold text-gray-400 overflow-auto"

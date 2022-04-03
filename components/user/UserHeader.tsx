@@ -144,7 +144,7 @@ const UserHeader: NextPage = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col flex-wrap bg-white h-48 w-full max-w-5xl p-4 justify-items-center shadow-sm overflow-scroll rounded-lg mt-8">
+      <div className="flex space-x-3 bg-white h-48 w-full p-4 justify-items-center shadow-sm overflow-scroll rounded-lg mt-8">
         <ul className="text-xs text-gray-700 h-full py-7">
           <li>Sun</li>
           <li>
@@ -160,7 +160,7 @@ const UserHeader: NextPage = () => {
           </li>
           <li>Sat</li>
         </ul>
-        <div className="flex flex-row-reverse space-x-2">
+        <div className="flex flex-row space-x-2">
           {Object.keys(data).map((month) => {
             return (
               <OneMonthContributions

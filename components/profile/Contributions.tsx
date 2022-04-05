@@ -4,12 +4,6 @@ import OneMonthContributions from "./OneMonthContributions";
 
 const Contributions: NextPage = () => {
   const data = {
-    May: [
-      [10, 10, 8, 4, 2, 10, 2],
-      [0, 4, 2, 10, 0, 2, 10],
-      [8, 0, 2, 10, 2, 4, 10],
-      [4, 8, 0, 10, 10, 6, 6],
-    ],
     June: [
       [4, 10, 0, 0, 2, 8, 10],
       [4, 2, 8, 10, 6, 2, 2],

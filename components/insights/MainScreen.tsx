@@ -13,7 +13,7 @@ const MainScreen: NextPage = () => {
         <MapView />
       </div>
       <div className="bg-red-500 w-full h-24 absolute top-70 left-0 flex items-center text-4xl text-[#fff] justify-center">
-        ⚠ This page will take more time ⚠
+        ⚠ This page will take more time.<br />thinking about the styles of charts. ⚠
       </div>
     </Fragment>
   );

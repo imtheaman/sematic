@@ -1,13 +1,16 @@
 # Sematic
 
-> i've to build two massive projects
-> it's the one.
-> second one will be a job searching website.
-> both will be fully functional alongwith data processing and backend.
+### sematic is a workflow tracker app for professional people. it gives you insights of your productivity.
+
+### for developers, after integrating your account(signin in) with github, it'll show you all of your project insights and you get inbuilt features like bug tracker etc.
 
 in this project -
-* React ✅
-* Redux ✅
-* connect with graphql ✅
-* responsive ✅
-* mobile first ✅
+
+- Next.js ✅
+- Redux ✅
+- Next-auth ✅
+- Tailwindcss ✅
+- Graphql ✅
+- MongoDB ✅
+- Nivo-charts ✅
+- mobile first responsiveness ✅

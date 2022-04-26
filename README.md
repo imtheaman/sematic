@@ -13,4 +13,5 @@ in this project -
 - Graphql ✅
 - MongoDB ✅
 - Nivo-charts ✅
-- mobile first responsiveness ✅
+
+this website isn't built for mobile devices.

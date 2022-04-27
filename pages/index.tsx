@@ -1,6 +1,7 @@
 import { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import CurrentProjectHighlight from "../components/home/CurrentProjectHighlight";
 import OverviewCard from "../components/home/OverviewCard";
 
@@ -21,9 +22,11 @@ const Home: NextPage = () => {
                 <h1 className="text-3xl heading flex-grow normal-case">
                   Are deadlines a real key success indicator?
                 </h1>
-                <button className="bg-violetish text-[#fff] px-10 py-2 rounded-lg">
-                  Read
-                </button>
+                <Link href="/article" passHref>
+                  <button className="bg-violetish text-[#fff] px-10 py-2 rounded-lg">
+                    Read
+                  </button>
+                </Link>
               </div>
               <div className="relative w-1/2">
                 <Image

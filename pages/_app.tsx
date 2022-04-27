@@ -5,15 +5,21 @@ import { Provider } from "react-redux";
 import Layout from "../components/Layout";
 import { useRouter } from "next/router";
 import SideBar from "../components/home/SideBar";
+import { SessionProvider } from "next-auth/react";
 
-const App = ({ Component, pageProps }: AppProps) => {
+const App = ({
+  Component,
+  pageProps: { session, ...otherProps },
+}: AppProps) => {
   const router = useRouter();
 
   return (
     <Provider store={store}>
-      <Layout anotherComponent={router.pathname === "/" && <SideBar />}>
-        <Component {...pageProps} />
-      </Layout>
+      <SessionProvider session={session}>
+        <Layout anotherComponent={router.pathname === "/" && <SideBar />}>
+          <Component {...otherProps} />
+        </Layout>
+      </SessionProvider>
     </Provider>
   );
 };

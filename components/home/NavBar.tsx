@@ -13,7 +13,6 @@ import { useRouter } from "next/router";
 
 const NavBar: NextPage = () => {
   const router = useRouter();
-  console.log(router.route);
   return (
     <div className="min-w-[5rem] h-[100vh] flex items-center flex-col justify-center text-gray-400">
       <div className="flex flex-col space-y-12 ">

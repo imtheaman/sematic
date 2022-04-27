@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { NextPage } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { Fragment } from "react";
 import ProfileCardsContainer from "./ProfileCardsContainer";
 import ProfileHeading from "./ProfileHeading";
 import TeamChatSmall from "./TeamChatSmall";
@@ -15,7 +14,7 @@ const SideBar: NextPage = () => {
       <div className="flex justify-between ">
         <h3 className="heading flex-grow">My Profile</h3>
         <button className="relative mt-2 text-violetish" title="Themes">
-          <Fragment>
+          <>
             <FontAwesomeIcon
               icon={faSquare}
               className="absolute top-0 left-0 animate-ping"
@@ -24,7 +23,7 @@ const SideBar: NextPage = () => {
               className="absolute top-0 left-0"
               icon={faSquare}
             />
-          </Fragment>
+          </>
         </button>
         <span className="ml-10">
           <Image

@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Fragment } from "react";
 
-const UserHeader: NextPage = () => {
+const UserHeader: NextPage<{year: number}> = ({year}) => {
   return (
     <Fragment>
       <div className="w-full relative overflow-hidden shadow-sm h-48 bg-[#fff] rounded-lg">
@@ -71,7 +71,7 @@ const UserHeader: NextPage = () => {
             </div>
             <div className="flex flex-col-reverse items-center ">
               <h3 className="text-lg font-semibold text-gray-600">
-                contributions(1yr.)
+                contributions({year})
               </h3>
               <span className="text-xl font-bold text-violet-900">4.98K</span>
             </div>

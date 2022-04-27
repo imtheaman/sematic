@@ -27,7 +27,7 @@ const ProfileCard: NextPage<Props> = ({
 
   return (
     <div
-      className={`profile-card ${conditionalClass} card-animation border flex flex-col justify-between px-4 py-3`}
+      className={`profile-card ${conditionalClass} card-animation flex flex-col justify-between px-4 py-3`}
     >
       <div className="flex items-center">
         <FontAwesomeIcon icon={faSquare} fontSize={17} />

@@ -7,7 +7,7 @@
 @layer base {
   body {
     background-color: #edecf6;
-    padding: 3rem;
+    padding: 2rem;
     min-height: 100vh;
   }
   img {
@@ -55,7 +55,7 @@
     @apply text-violetish cursor-pointer;
   }
   .link-hover {
-    @apply hover:font-semibold transition duration-75;
+    @apply hover:font-semibold text-violet-900 transition duration-75;
   }
   .btn-selected {
     @apply px-10 py-1 bg-violet-800 text-[#fff] rounded-md;

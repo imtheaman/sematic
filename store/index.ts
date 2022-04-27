@@ -1,9 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit";
-import uiReducers from "./ui-reducers";
+import uiReducer from "./ui-reducers";
 
 export const store = configureStore({
   reducer: {
-    ui: uiReducers,
+    ui: uiReducer,
   },
 });
 

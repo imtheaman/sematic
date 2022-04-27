@@ -36,7 +36,7 @@ const Message: NextPage<Props> = ({ senderImage, sentBy, content, time }) => {
           {content}
         </div>
       </div>
-      <p className="text-gray-400 text-xs">{time}</p>
+      <p className="text-gray-600 text-[0.65rem]">{time}</p>
     </div>
   );
 };

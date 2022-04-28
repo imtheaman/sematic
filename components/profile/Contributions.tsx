@@ -1,5 +1,8 @@
 import { NextPage } from "next";
 import { useState } from "react";
+import useAppDispatch from "../../hooks/useAppDispatch";
+import useAppSelector from "../../hooks/useAppSelector";
+import { setContributionYear } from "../../store/ui-reducers";
 import OneMonthContributions from "./OneMonthContributions";
 
 const Contributions: NextPage = () => {
@@ -66,8 +69,8 @@ const Contributions: NextPage = () => {
     ],
   };
   const currentYear = new Date().getFullYear();
-  const [contributionYear, setContributionYear] = useState(currentYear);
-
+  const contributionYear = useAppSelector(({ ui }) => ui.contributionYear);
+  const dispatch = useAppDispatch();
   return (
     <div className="flex space-x-4 bg-white h-48 w-full p-4 text-gray-700 justify-items-center shadow-sm overflow-scroll rounded-lg">
       <ul className="text-xs h-full py-7">
@@ -98,7 +101,7 @@ const Contributions: NextPage = () => {
       </div>
       <div className="flex flex-col space-y-2 h-full justify-center px-4">
         <button
-          onClick={() => setContributionYear(currentYear)}
+          onClick={() => dispatch(setContributionYear(currentYear))}
           className={contributionYear === currentYear ? "btn-selected" : "btn"}
         >
           {currentYear}

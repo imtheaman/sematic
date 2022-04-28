@@ -10,9 +10,9 @@ const ProjectCard: NextPage<ProjectProps> = ({ title, percent, className }) => {
       : "text-orangish bg-orange-100";
   return (
     <div
-      className={`bg-white flex flex-col justify-between shadow-md rounded-md h-36 px-6 py-4  card-animation`}
+      className={`bg-white flex w-80 flex-col justify-between shadow-md rounded-md h-36 px-6 py-4 card-animation`}
     >
-      <div className="flex">
+      <div className="flex justify-between">
         <span className="text-gray-600 text-base mr-4">{title}</span>
         {percent >= 100 ? (
           <FontAwesomeIcon

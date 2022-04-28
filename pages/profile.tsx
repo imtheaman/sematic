@@ -1,9 +1,15 @@
 import { NextPage } from "next";
-import MainScreen from "../components/profile/MainScreen";
+import Contributions from "../components/profile/Contributions";
+import RecentActivity from "../components/profile/RecentActivity";
+import UserHeader from "../components/profile/UserHeader";
 
 const Profile: NextPage = () => {
   return (
-      <MainScreen />
+    <div className="space-y-10">
+      <UserHeader />
+      <Contributions />
+      <RecentActivity />
+    </div>
   );
 };
 

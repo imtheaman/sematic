@@ -1,9 +1,13 @@
 import { NextPage } from "next";
-import MainScreen from "../components/projects/MainScreen";
+import CurrentProjectInsights from "../components/projects/CurrentProjectInsights";
+import ProjectsList from "../components/projects/ProjectsList";
 
 const projects: NextPage = () => {
   return (
-      <MainScreen />
+    <div className="space-y-10">
+      <CurrentProjectInsights />
+      <ProjectsList />
+    </div>
   );
 };
 

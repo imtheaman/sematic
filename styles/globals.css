@@ -63,4 +63,7 @@
   .btn {
     @apply px-10 py-1 border hover:border-violet-800 border-transparent rounded-md transition duration-75 ease-out;
   }
+  .theme-selected {
+    @apply hidden;
+  }
 }

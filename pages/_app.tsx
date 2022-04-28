@@ -5,7 +5,6 @@ import { Provider } from "react-redux";
 import Layout from "../components/Layout";
 import { useRouter } from "next/router";
 import SideBar from "../components/home/SideBar";
-import { SessionProvider } from "next-auth/react";
 
 const App = ({
   Component,
@@ -15,11 +14,9 @@ const App = ({
 
   return (
     <Provider store={store}>
-      <SessionProvider session={session}>
         <Layout anotherComponent={router.pathname === "/" && <SideBar />}>
           <Component {...otherProps} />
         </Layout>
-      </SessionProvider>
     </Provider>
   );
 };

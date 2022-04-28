@@ -2,8 +2,10 @@ import { NextPage } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { Fragment } from "react";
+import useAppSelector from "../../hooks/useAppSelector";
 
-const UserHeader: NextPage<{year: number}> = ({year}) => {
+const UserHeader: NextPage = () => {
+  const year = useAppSelector(({ ui }) => ui.contributionYear);
   return (
     <Fragment>
       <div className="w-full relative overflow-hidden shadow-sm h-48 bg-[#fff] rounded-lg">

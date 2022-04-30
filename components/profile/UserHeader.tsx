@@ -36,7 +36,7 @@ const UserHeader: NextPage = () => {
             <h1 className="font-semibold text-violet-900 text-3xl">
               Sarah Williams
             </h1>
-            <h3 className="text-lg text-gray-600">Hiring manager at Apple</h3>
+            <h3 className="text-lg text-gray-600">Software engineer at Apple</h3>
             <span className="text-gray-600 flex-grow font-thin">
               2017 - Current
             </span>
